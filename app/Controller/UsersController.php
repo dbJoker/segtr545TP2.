@@ -21,7 +21,7 @@ class UsersController extends AppController {
     // Allow users to register and logout.
     $this->Auth->allow('logout');
     
-    $this->Auth->allow('register', 'activate', 'login');
+    $this->Auth->allow('register', 'activate', 'login', 'send_mail');
     
     $this->Auth->deny('index', 'view', 'add');
 }
